@@ -25,6 +25,7 @@ void testApp::draw()
 {
     psBlend.draw(target.getTextureReference(), blendMode);
     ofSetWindowTitle("blendMode: " + psBlend.getBlendMode(blendMode));
+    ofDrawBitmapString("press UP/DOWN key", 10, 20);
 }
 
 void testApp::keyPressed(int key)

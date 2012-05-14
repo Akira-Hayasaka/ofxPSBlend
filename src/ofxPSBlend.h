@@ -4,9 +4,7 @@
 //  Created by Akira Hayasaka on 5/14/12.
 //  Copyright (c) 2012 ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆ﾟ･:,｡ﾟ･:,｡★ﾟ･:,｡ﾟ･:,｡☆. All rights reserved.
 //
-
-#ifndef TakujiLive_ofxPSBlend_h
-#define TakujiLive_ofxPSBlend_h
+#pragma once
 
 #include "ofMain.h"
 
@@ -478,4 +476,3 @@ private:
     
 };
 
-#endif
