@@ -1,0 +1,143 @@
+// !$*UTF8*$!
+{
+	316FD0291432D8E40083F156 /* emptyExample */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = emptyExample;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	316FD04C1432D8EB0083F156 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	316FD04D1432D8EB0083F156 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	316FD0561432D9180083F156 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */;
+	};
+	316FD0581432D9210083F156 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 316FD0531432D8FF0083F156 /* icon.icns */;
+	};
+	316FD0591432D9210083F156 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 316FD0531432D8FF0083F156 /* icon.icns */;
+	};
+	316FD05C1432D9210083F156 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 1;
+		kPath = (
+			CFBundleName,
+		);
+		name = "/Users/makira/openFrameworks/oF007/projects/20110928DesignTide/emptyExample/openFrameworks-Info.plist";
+		rLen = 9;
+		rLoc = 0;
+	};
+	E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 316FD0291432D8E40083F156 /* emptyExample */;
+		activeTarget = E4B69B5A0A3A1756003C02F2 /* emptyExample */;
+		addToTargets = (
+			E4B69B5A0A3A1756003C02F2 /* emptyExample */,
+		);
+		codeSenseManager = 316FD04D1432D8EB0083F156 /* Code sense */;
+		executables = (
+			316FD0291432D8E40083F156 /* emptyExample */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					301,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 338876644;
+			PBXWorkspaceStateSaveDate = 338876644;
+		};
+		perUserProjectItems = {
+			316FD0561432D9180083F156 /* PBXBookmark */ = 316FD0561432D9180083F156 /* PBXBookmark */;
+			316FD0581432D9210083F156 /* PBXBookmark */ = 316FD0581432D9210083F156 /* PBXBookmark */;
+			316FD0591432D9210083F156 /* PBXBookmark */ = 316FD0591432D9210083F156 /* PBXBookmark */;
+			316FD05C1432D9210083F156 /* PlistBookmark */ = 316FD05C1432D9210083F156 /* PlistBookmark */;
+		};
+		sourceControlManager = 316FD04C1432D8EB0083F156 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	E4B69B5A0A3A1756003C02F2 /* emptyExample */ = {
+		activeExec = 0;
+		executables = (
+			316FD0291432D8E40083F156 /* emptyExample */,
+		);
+	};
+}
