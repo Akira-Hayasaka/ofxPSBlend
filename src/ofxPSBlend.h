@@ -468,7 +468,7 @@ public:
 		return blendName;        
     }
     
-private:
+protected: // Dragon!
     ofFbo base;
     ofShader psBlendShader;
     float width;
