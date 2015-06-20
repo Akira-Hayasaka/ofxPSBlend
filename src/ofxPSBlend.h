@@ -632,8 +632,9 @@ public:
     void setup(int width, int height)
     {
         base.allocate(width, height, GL_RGBA, ofFbo::maxSamples());
-        plane.set(width, height, 10, 10);
-        plane.mapTexCoords(0, 0, width, height);
+        quad.getVertices().resize(4);
+        quad.getTexCoords().resize(4);
+        quad.setMode(OF_PRIMITIVE_TRIANGLE_FAN);
         this->width = width;
         this->height = height;
         loadShader();
@@ -642,8 +643,9 @@ public:
     void allocate(int width, int height)
     {
         base.allocate(width, height, GL_RGBA, ofFbo::maxSamples());
-        plane.set(width, height, 10, 10);
-        plane.mapTexCoords(0, 0, width, height);
+        quad.getVertices().resize(4);
+        quad.getTexCoords().resize(4);
+        quad.setMode(OF_PRIMITIVE_TRIANGLE_FAN);
         this->width = width;
         this->height = height;
     }
@@ -684,10 +686,7 @@ public:
 		psBlendShader.setUniformTexture("base", base, 1);
         psBlendShader.setUniformTexture("blendTgt", blendTgt, 2);
         psBlendShader.setUniform1i("mode", blendMode);
-        ofPushMatrix();
-        ofTranslate(width/2, height/2);
-        plane.draw();
-        ofPopMatrix();
+        drawPlane(width, height);
 		psBlendShader.end();
 	}
     
@@ -798,10 +797,26 @@ public:
     }
     
 protected: // Dragon!
+    
+    void drawPlane(float _width, float _height)
+    {
+        quad.setVertex(0, ofVec3f(0,0,0));
+        quad.setVertex(1, ofVec3f(_width,0,0));
+        quad.setVertex(2, ofVec3f(_width,_height,0));
+        quad.setVertex(3, ofVec3f(0,_height,0));
+        
+        quad.setTexCoord(0, ofVec2f(0,0));
+        quad.setTexCoord(1, ofVec2f(_width,0));
+        quad.setTexCoord(2, ofVec2f(_width,_height));
+        quad.setTexCoord(3, ofVec2f(0,_height));
+        
+        quad.draw();
+    }
+    
     ofFbo base;
     ofShader psBlendShader;
     float width;
     float height;
-    ofPlanePrimitive plane;
+    ofVboMesh quad;
     
 };
